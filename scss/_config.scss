@@ -201,6 +201,17 @@ $widths: (15, 16, 20, 25, 20, 35, 40, 45, 50, 55, 60, 65, 100, 150, 200);
 
     overflow: visible;
 
+    i {
+      font-size: 72px;
+      position: absolute;
+    }
+
+    .span_date {
+      position: absolute;
+      margin: 2px 11px;
+      font-size: 24px;
+    }
+
     img {
       position: relative;
     }
