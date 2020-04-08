@@ -1,0 +1,129 @@
+.home {
+  height: 100%;
+  padding-top: 35vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  background:
+    linear-gradient(to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.3)),
+    url('../img/bg_4.jpg') center top;
+  background-size: cover;
+  background-attachment: fixed;
+  text-transform: uppercase;
+
+
+  &__name {
+    font-size: 3.9rem;
+    // padding-bottom: 1rem;
+    // margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: $primary-white;
+
+    &--last {
+      // color: $secondary-color;
+      font-weight: 300;
+      font-size: 3.0rem;
+      font-family: 'Courier New', Courier, monospace;
+
+    }
+  }
+}
+
+.home__footer {
+  font-size: 1rem;
+  font-style: italic;
+  position: relative;
+  bottom: -6rem;
+  right: 3rem;
+  text-align: right;
+  padding: 1rem;
+  color: set-text-color($primary-color);
+
+  h2 {
+    text-transform: capitalize;
+  }
+
+  p {
+    font-size: 25px;
+  }
+}
+
+
+// buttons
+%btn {
+  display: inline-block;
+  border-radius: 18px;
+  padding: 12px 30px;
+  margin: 3px;
+
+
+  &:hover {
+    transform: scale(.98);
+  }
+}
+
+// Set background & text color
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+
+
+.btn-primary {
+  @extend %btn;
+  @include set-background(lighten($secondary-color, 30%));
+}
+
+.btn-secondary {
+  @extend %btn;
+  @include set-background($secondary-color);
+}
+
+button {
+  .btn-primary {
+    text-transform: uppercase;
+  }
+}
+
+// endButtons
+
+.events {
+  color: $primary-white;
+  height: 70vh;
+  // padding-top: 45vh;
+  overflow: hidden;
+  padding-top: 9vh;
+  // padding-bottom: 5vh;
+  // margin-bottom: 5vh;
+  overflow: hidden;
+  // align-items: center;
+  // text-align: center;
+  background:
+    linear-gradient(to right,
+      rgba($primary-color, 3.9),
+      rgba($primary-color, 0.2)),
+    url('../dist/img/slider1.jpg');
+  background-size: cover;
+
+  .columns {
+    padding-left: 0;
+  }
+
+  img {
+    height: 202px;
+  }
+
+  // i{
+  //   font-size: 60px;
+  // }
+
+
+  h5 {
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
