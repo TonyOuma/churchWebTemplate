@@ -13,21 +13,21 @@ function toggleMenu() {
     hamburger.classList.add("open");
     nav.classList.add("open");
     menuNav.classList.add("open");
-    navItems.forEach(item => item.classList.add("open"));
+    navItems.forEach((item) => item.classList.add("open"));
 
     showMenu = true;
   } else {
     hamburger.classList.remove("open");
     nav.classList.remove("open");
     menuNav.classList.remove("open");
-    navItems.forEach(item => item.classList.remove("open"));
+    navItems.forEach((item) => item.classList.remove("open"));
 
     showMenu = false;
   }
 }
 
 // slider
-$(".slider").each(function() {
+$(".slider").each(function () {
   // For every slider
   var $this = $(this); // Current slider
   var $group = $this.find(".slide-group"); // Get the slide-group (container)
@@ -62,7 +62,7 @@ $(".slider").each(function() {
     // Position new slide to left (if less) or right (if more) of current
     $slides.eq(newIndex).css({ left: slideLeft, display: "block" });
 
-    $group.animate({ left: animateLeft }, function() {
+    $group.animate({ left: animateLeft }, function () {
       // Animate slides and
       $slides.eq(currentIndex).css({ display: "none" }); // Hide previous slide
       $slides.eq(newIndex).css({ left: 0 }); // Set position of the new item
@@ -74,7 +74,7 @@ $(".slider").each(function() {
   function advance() {
     // Used to set
     clearTimeout(timeout); // Clear previous timeout
-    timeout = setTimeout(function() {
+    timeout = setTimeout(function () {
       // Set new timer
       if (currentIndex < $slides.length - 1) {
         // If slide < total slides
@@ -86,7 +86,7 @@ $(".slider").each(function() {
     }, 2000); // Milliseconds timer will wait
   }
 
-  $.each($slides, function(index) {
+  $.each($slides, function (index) {
     // Create a button element for the button
     var $button = $('<button type="button" class="slide-btn">•</button>');
     if (index === currentIndex) {
@@ -94,7 +94,7 @@ $(".slider").each(function() {
       $button.addClass("active"); // Add the active class
     }
     $button
-      .on("click", function() {
+      .on("click", function () {
         // Create event handler for the button
         move(index); // It calls the move() function
       })
@@ -110,7 +110,42 @@ $(".gallery").magnificPopup({
   delegate: "a",
   type: "image",
   gallery: {
-    enabled: true
-  }
+    enabled: true,
+  },
 });
 // end gallery section
+
+//------- Go to Top --------//
+$(window).on("scroll", function () {
+  if ($(this).scrollTop() > 100) {
+    $("#header1").addClass("header-scrolled1");
+    $("#back-top").addClass("back-top-animation");
+  } else {
+    $("#header1").removeClass("header-scrolled1");
+    $("#back-top").removeClass("back-top-animation");
+  }
+});
+
+//------- Go to Top --------//
+$(window).on("scroll", function () {
+  if ($(this).scrollTop() > 100) {
+    $("#header1").addClass("header-scrolled1");
+    $("#back-top").addClass("back-top-animation");
+  } else {
+    $("#header1").removeClass("header-scrolled1");
+    $("#back-top").removeClass("back-top-animation");
+  }
+});
+
+/* ---------------------------------------------
+        scroll body to 0px on click
+     --------------------------------------------- */
+$("#back-top a").on("click", function () {
+  $("body,html").animate(
+    {
+      scrollTop: 0,
+    },
+    1000
+  );
+  return false;
+});

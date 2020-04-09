@@ -52,7 +52,7 @@
 }
 /* ProgressBar */
 .progress-bar {
-  background: #ff652f;
+  background: #ffd6c8;
   box-shadow: none;
   font-size: 12px;
   line-height: 1.2;
@@ -79,7 +79,8 @@
   top: -37px;
   right: -32px;
   font-size: 23px;
-  font-weight: 600;
+  font-weight: 300;
+  color: #fff;
 }
 .progress {
   width: 75%;
@@ -102,7 +103,7 @@
   height: 0;
   border-style: solid;
   border-width: 0 6px 10px 6px;
-  border-color: transparent transparent #ff652f transparent;
+  border-color: transparent transparent #ffd6c8 transparent;
 }
 /* endProgressBar */
 .event-wrap .text {
@@ -293,7 +294,7 @@ section {
   color: #fff;
   padding-top: 3rem;
   padding-bottom: 2rem;
-  background-image: url("../img/Subsciption\ Image.jpg");
+  background-image: url("../img/footer1.jpg");
   background-size: cover;
 }
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -357,7 +358,7 @@ section {
   transition: all 0.3s ease 0s;
 }
 #back-top a {
-  background: #f9eacd;
+  background: #90acd1;
   display: block;
   text-align: center;
   width: 35px;
@@ -376,6 +377,7 @@ section {
 #back-top a:hover {
   box-shadow: 0 8px 12px rgba(156, 156, 156, 0.7);
 }
+
 .back-top-animation {
   right: 20px !important;
   opacity: 1 !important;

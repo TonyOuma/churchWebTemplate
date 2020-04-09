@@ -10,6 +10,9 @@
 .bg-light {
   background: #f8f9fa; }
 
+.bg-secondary {
+  background: #f2f2f2; }
+
 .home-bot {
   margin-top: -90px; }
 
@@ -40,7 +43,7 @@
   .subHeading::after {
     position: absolute;
     top: 49%;
-    left: -114px;
+    left: -126px;
     content: '';
     width: 100px;
     height: 5px;
@@ -151,10 +154,22 @@
 .width-200 {
   width: 200px; }
 
+.hr-ml {
+  margin-left: 0; }
+
 .footer-card .card {
   border: none;
   background: transparent; }
 
+.events .bookmark-size {
+  font-size: 88px;
+  position: absolute; }
+.events i {
+  margin-right: 10px; }
+.events .span_date {
+  position: absolute;
+  margin: 5px 16px;
+  font-size: 24px; }
 .events hr {
   margin: 0 0 1.25rem 0 !important; }
 .events h5 {
@@ -162,6 +177,20 @@
 
 .pad-left-5 {
   padding-left: 10%;
+  padding-bottom: 5%; }
+
+.pad-top {
+  padding-top: 2%; }
+
+.pad-top-6 {
+  padding-top: 6%; }
+
+.span-mar-7 {
+  margin-top: 7%;
+  display: inline-block; }
+
+.pad-left-22 {
+  padding-left: 22%;
   padding-bottom: 5%; }
 
 .card-wrapper .card {
@@ -188,6 +217,13 @@
 
 .event-card .card {
   overflow: visible; }
+  .event-card .card i {
+    font-size: 72px;
+    position: absolute; }
+  .event-card .card .span_date {
+    position: absolute;
+    margin: 2px 11px;
+    font-size: 24px; }
   .event-card .card img {
     position: relative; }
   .event-card .card .time {
@@ -265,9 +301,30 @@ img {
   .footer-card h5 {
     text-align: center;
     margin-top: 2rem;
-    font-size: 25px; }
+    font-size: 2.5rem; }
   .footer-card card {
-    border: none; }
+    border: none;
+    background: transparent; }
+
+.image-container {
+  position: relative; }
+  .image-container .single-img {
+    position: absolute;
+    top: 17%;
+    overflow: visible;
+    /* left: 18%; */
+    right: 20%; }
+  .image-container .single-img-left {
+    right: -23%;
+    position: absolute;
+    top: 24%;
+    overflow: visible; }
+
+.prog-gallery {
+  display: flex;
+  margin-bottom: 3%; }
+  .prog-gallery img {
+    height: 80%; }
 
 .home {
   height: 100%;
@@ -277,14 +334,16 @@ img {
   text-align: center;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/bg_4.jpg") center top;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  text-transform: uppercase; }
   .home__name {
     font-size: 3.5rem;
+    text-transform: uppercase;
     color: #fff; }
     .home__name--last {
-      color: #ff652f;
       font-weight: 300;
-      font-size: 4.5rem; }
+      font-size: 3.0rem;
+      font-family: 'Courier New', Courier, monospace; }
 
 .home__footer {
   font-size: 1rem;
@@ -296,7 +355,7 @@ img {
   padding: 1rem;
   color: #fff; }
   .home__footer h2 {
-    text-transform: uppercase; }
+    text-transform: capitalize; }
   .home__footer p {
     font-size: 25px; }
 
@@ -309,8 +368,8 @@ img {
     transform: scale(0.98); }
 
 .btn-primary {
-  background-color: #414141;
-  color: #fff; }
+  background-color: #ffd6c8;
+  color: #000; }
 
 .btn-secondary {
   background-color: #ff652f;
@@ -324,7 +383,6 @@ button .btn-primary {
   height: 70vh;
   overflow: hidden;
   padding-top: 9vh;
-  margin-bottom: 5vh;
   overflow: hidden;
   background: linear-gradient(to right, #272727, rgba(39, 39, 39, 0.2)), url("../dist/img/slider1.jpg");
   background-size: cover; }
@@ -356,7 +414,7 @@ button .btn-primary {
       content: '';
       position: absolute;
       top: -8px;
-      width: 28px;
+      width: 14px;
       height: 3px;
       background: #fff;
       transition: all 0.5s ease-in-out; }
@@ -364,7 +422,7 @@ button .btn-primary {
       content: '';
       position: absolute;
       top: 8px;
-      width: 20px;
+      width: 21px;
       height: 3px;
       background: #fff;
       transition: all 0.5s ease-in-out; }
@@ -372,6 +430,7 @@ button .btn-primary {
       transform: rotate(720deg);
       background: transparent; }
       .menu-btn__burger.open::before {
+        width: 28px;
         transform: rotate(45deg) translate(5px, 8px); }
       .menu-btn__burger.open::after {
         width: 28px;
@@ -414,7 +473,7 @@ button .btn-primary {
     .nav .menu-nav__link {
       display: inline-block;
       font-size: 1rem;
-      text-transform: uppercase;
+      text-transform: capitalize;
       padding: 1rem 0;
       font-weight: 300;
       transition: all 0.5s ease-in-out; }
