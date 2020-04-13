@@ -50,13 +50,14 @@ main {
   width: 100%;
 
   .social-icons {
-    position: fixed;
-    bottom: 1rem;
-    left: 1rem;
+    // position: fixed;
+    bottom: 3rem;
+    left: 3rem;
 
     a {
       padding: 0.4rem;
       @include transition-ease;
+      color: white;
 
       &:hover {
         color: $secondary-color;

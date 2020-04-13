@@ -168,8 +168,8 @@ $widths: (15, 16, 20, 25, 20, 35, 40, 45, 50, 55, 60, 65, 100, 150, 200);
   display: inline-block;
 }
 
-.pad-left-22 {
-  padding-left: 22%;
+.pad-left-28 {
+  padding-left: 28%;
   padding-bottom: 5%;
 }
 
@@ -389,14 +389,7 @@ img {
 
 }
 
-.prog-gallery {
-  display: flex;
-  margin-bottom: 3%;
 
-  img {
-    height: 80%;
-  }
-}
 
 
 @mixin transition-ease {

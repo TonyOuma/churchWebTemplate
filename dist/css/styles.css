@@ -332,6 +332,12 @@ section {
   .events .columns {
     padding-left: 0.9375rem;
   }
+  .event-wrap {
+    margin-bottom: 35px;
+  }
+  .container-fluid {
+    padding-top: 0;
+  }
 }
 /* Medium and up */
 @media screen and (min-width: 40em) {
