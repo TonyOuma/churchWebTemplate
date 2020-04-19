@@ -1,3 +1,4 @@
+-Generated a CHANGELOD.md file for the project
 -Folder Restructuring
 -Styling change
 -Program section redesign
