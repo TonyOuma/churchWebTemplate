@@ -14,7 +14,9 @@
   text-transform: uppercase;
 
 
+
   &__name {
+    font-family: 'Cousine', monospace;
     font-size: 3.5rem;
     // padding-bottom: 1rem;
     // margin-bottom: 1rem;
@@ -25,7 +27,7 @@
       // color: $secondary-color;
       font-weight: 300;
       font-size: 3.0rem;
-      font-family: 'Courier New', Courier, monospace;
+      // font-family: 'Courier New', Courier, monospace;
 
     }
   }

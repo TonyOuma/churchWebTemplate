@@ -316,7 +316,10 @@ section {
     overflow: hidden;
   }
   .home__name {
-    font-size: 1.9rem;
+    font-size: 30px;
+  }
+  .home__name--last {
+    font-size: 30px;
   }
   .home__footer {
     font-size: 0.8rem;
